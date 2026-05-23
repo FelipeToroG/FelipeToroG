@@ -72,7 +72,7 @@ Projects 2 through 5 ship between June and September 2026.
 
 ### Track record
 
-- **$200M+ in proposals defended** through federal audit. 100% pass rate across 25+ TINA-compliant submissions.
+- **$300M+ in proposals defended** through federal audit. 100% pass rate across 25+ TINA-compliant submissions.
 - **Sole pricing analyst and audit POC** for a defense electronics manufacturer. Single source of truth on cost-and-pricing data for the company.
 - **Built the BI function from scratch.** Promoted into Sypris Electronics' first-ever Business Intelligence Engineer role in 2025. Architected the Power BI dashboards and SharePoint catalog the C-suite now uses for strategic review.
 - **Co-founded and scaled a services business** to 25+ remote staff before joining aerospace. Achieved 35% YoY revenue growth for three consecutive years.
