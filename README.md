@@ -2,7 +2,7 @@
 
 **The bridge between executive strategy and production ML.**
 
-I'm a defense aerospace pricing strategist building production AI/ML systems. Eight years of executive-level finance experience, $200M+ in proposals defended against federal auditors, and an M.S. in Artificial Intelligence underway at the University of South Florida.
+I'm a defense aerospace pricing strategist building production AI/ML systems. Eight years of executive-level finance experience, $300M+ in proposals defended against federal auditors, and an M.S. in Artificial Intelligence underway at the University of South Florida.
 
 I spent 8+ years operating at the intersection of executive finance, business intelligence, and high-stakes decision-making in aerospace and defense before transitioning into production AI/ML engineering.
 
