@@ -95,9 +95,3 @@ Production-grade ML system for credit card fraud detection. XGBoost selected on 
 ML/AI Engineer, Data Scientist, and Applied AI roles where domain knowledge multiplies engineering work. Strongest fit with companies in fintech, SaaS, e-commerce, and manufacturing.
 
 **Reach me:** [LinkedIn](https://linkedin.com/in/felipe-toro-g) · ftoro26@gmail.com
-
----
-
-<a href="https://github.com/FelipeToroG">
-  <img src="https://github-readme-stats.vercel.app/api?username=FelipeToroG&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&hide=stars&card_width=400" alt="Felipe Toro's GitHub stats"/>
-</a>
