@@ -1,29 +1,28 @@
 ## Felipe Toro
 
-**The bridge between executive strategy and production ML.**
+*M.S. in AI & Business Analytics (May 2027)*
 
-I'm a cost & pricing strategist from a highly regulated industry now building production AI/ML systems. Eight years of executive-level finance experience, $300M+ in proposals defended against federal auditors, and an M.S. in Artificial Intelligence and Business Analytics underway at USF.
+The bridge between executive strategy and AI/ML implementation.
+
+I'm a business intelligence engineer with eight years of experience optimizing processes and building systems to solve business problems. Executive-level finance experience in a highly regulated industry. $300M+ in proposals defended against federal and private auditors.
 
 The audit-defensibility, schema-as-contract discipline, and cost-aware decision frameworks I built in that environment transfer directly to financial services AI/ML.
 
 ---
 
-### Production work, audit-defensible by construction
-
 **[AML Compliance Platform](https://github.com/FelipeToroG/aml-transaction-monitoring)**
 
-End-to-end production AML transaction monitoring service for payments platforms. Hybrid scoring (Isolation Forest anomaly head plus calibrated XGBoost supervised classifier) on the IBM AML HI-Small dataset (~5M transactions). Cost-weighted Precision@k optimization tuned to investigator review capacity, not academic AUC. Claude-powered case narratives where every claim cites a specific transaction or feature value from the alert evidence bundle. FastAPI service with Pydantic v2 contracts, Streamlit investigator UI, Langfuse plus Prometheus observability, PSI drift detection, segment fairness audit. 35 pytest tests. Multi-stage Docker.
+End-to-end production AML transaction monitoring service for payments platforms. Hybrid scoring stacks an Isolation Forest anomaly score as a feature into a calibrated LightGBM classifier, trained on the IBM AML HI-Small dataset (~5M transactions). Cost-weighted Precision@k optimization tuned to investigator review capacity, not academic AUC. Claude-powered case narratives where every claim cites a specific transaction or feature value from the alert evidence bundle. FastAPI service with Pydantic v2 contracts, Streamlit investigator UI, Langfuse plus Prometheus observability, PSI drift detection, segment fairness audit. 49 pytest tests. Multi-stage Docker.
 
 > The finding I didn't expect: production AML is rate-limited by investigator review capacity, not by model discrimination. A 0.92 AUC-PR model with 4x the alert volume is undeployable. The right metric is cost-weighted Precision@k at the team's daily review capacity. Standard ML literature ranks by AUC; production ranks by investigator hours.
 
 | Outcome | Value |
 |---------|-------|
-| Test Precision@k | 0.547 at k=384 alerts/day |
-| Lift over random alerting | ~270x |
-| Test recall | 13.5% (capacity-bound by design) |
-| Selected family | XGBoost (Optuna sweep across 4 families) |
-| Salvage recovery time | 1.5 hours (vs 25 hours for clean restart) after a documented Optuna hang |
-| Test suite | 35/35 passing |
+| Test Precision@k | 0.91 at k=384 alerts/day |
+| Lift over random alerting | ~445x |
+| Test recall | 22.4% (capacity-bound by design) |
+| Selected family | LightGBM (Optuna sweep: XGBoost + LightGBM) |
+| Test suite | 49/49 passing |
 | Inference target | < 150ms p99 on scoring path |
 
 ---
@@ -70,28 +69,26 @@ Production-grade ML system for credit card fraud detection. XGBoost selected on 
 
 ### What makes the work different
 
-**Cost-aware model selection.** Industry default is to pick on F1 or AUC-PR. Operating under federal audit taught me that the right metric is always dollars or hours. The fraud project uses expected loss as the selection criterion; AML uses cost-weighted Precision@k at the team's daily review capacity. The model that wins on AUC-PR is not always the model that wins on cost.
+- **Cost-aware model selection**
+- **Zero-leakage by construction**
+- **Schema as contract**
+- **Explainability is not optional**
+- **Failure response is a deliverable**
 
-**Zero-leakage by construction.** The preprocessing pipeline is fit inside cross-validation, not before. Feature engineering is causal-windowed and safe to compute before the temporal split. Data leakage is mathematically impossible. This is the engineering equivalent of an internal control. The system enforces correctness rather than relying on the engineer to remember it.
-
-**Schema as contract.** API endpoints use Pydantic v2 with extra=forbid, so unknown fields are rejected at the boundary. Model artifacts are schema-versioned and refuse to load against a service running a different schema. LLM outputs are discriminated unions with XOR invariants. Drift between training, serving, and downstream consumers is impossible to ship by accident. This is what auditable software looks like.
-
-**Explainability is not optional.** Every fraud prediction returns SHAP attribution. Every AML alert ships with a citation-grounded case narrative where every factual claim references a specific transaction ID or feature value from the evidence bundle. Production fraud systems, healthcare decisions, and credit models all face regulatory pressure to explain themselves. I built it in from the start because I've seen what happens when a model cannot.
-
-**Failure response is a deliverable.** The AML project's Optuna sweep hung indefinitely on a Logistic Regression hyperparameter pathology at hour 19 of 25. I diagnosed it via MLflow run inspection, killed the process, and wrote a salvage driver that recovered the winning XGBoost hyperparameters and completed the downstream pipeline in 1.5 hours rather than restarting the full sweep. The incident is documented in the repository with five carry-forward lessons. Production ML systems must be able to recover from partial completion; the salvage script is now a permanent fixture of the repo.
+Full reasoning behind each principle is in the project READMEs.
 
 ---
 
 ### Education
 
-**M.S. Artificial Intelligence and Business Analytics.** University of South Florida (expected 2027). Focus: production AI systems and applied ML.
-**B.S. Industrial Engineering.** University of South Florida (2021)
-**Six Sigma Green Belt.** American Society for Quality
+- **M.S. Artificial Intelligence and Business Analytics.** University of South Florida (expected 2027). Focus: production AI systems and applied ML.
+- **B.S. Industrial Engineering.** University of South Florida (2021)
+- **Six Sigma Green Belt.** American Society for Quality
 
 ---
 
 ### Currently evaluating opportunities
 
-ML/AI Engineer, Data Scientist, and Applied AI roles where domain knowledge multiplies engineering work. Strongest fit with companies in fintech, SaaS, e-commerce, and manufacturing.
+ML/AI Engineer, Data Scientist, and Applied AI roles.
 
 **Reach me:** [LinkedIn](https://linkedin.com/in/felipe-toro-g) · ftoro26@gmail.com
