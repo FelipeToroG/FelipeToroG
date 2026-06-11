@@ -10,7 +10,7 @@ The audit-defensibility, schema-as-contract discipline, and cost-aware decision 
 
 ---
 
-**[AML Compliance Platform](https://github.com/FelipeToroG/aml-transaction-monitoring)**
+**[AML Compliance Platform with LLM Narratives](https://github.com/FelipeToroG/aml-transaction-monitoring)**
 
 End-to-end production AML transaction monitoring service for payments platforms. Hybrid scoring stacks an Isolation Forest anomaly score as a feature into a calibrated LightGBM classifier, trained on the IBM AML HI-Small dataset (~5M transactions). Cost-weighted Precision@k optimization tuned to investigator review capacity, not academic AUC. Claude-powered case narratives where every claim cites a specific transaction or feature value from the alert evidence bundle. FastAPI service with Pydantic v2 contracts, Streamlit investigator UI, Langfuse plus Prometheus observability, PSI drift detection, segment fairness audit. 53 pytest tests. Multi-stage Docker.
 
@@ -81,7 +81,7 @@ Full reasoning behind each principle is in the project READMEs.
 
 ### Education
 
-- **M.S. Artificial Intelligence and Business Analytics.** University of South Florida (expected 2027). Focus: production AI systems and applied ML.
+- **M.S. Artificial Intelligence and Business Analytics.** University of South Florida (expected May 2027). Focus: production AI systems and applied ML.
 - **B.S. Industrial Engineering.** University of South Florida (2021)
 - **Six Sigma Green Belt.** American Society for Quality
 
