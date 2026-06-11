@@ -12,7 +12,7 @@ The audit-defensibility, schema-as-contract discipline, and cost-aware decision 
 
 **[AML Compliance Platform](https://github.com/FelipeToroG/aml-transaction-monitoring)**
 
-End-to-end production AML transaction monitoring service for payments platforms. Hybrid scoring stacks an Isolation Forest anomaly score as a feature into a calibrated LightGBM classifier, trained on the IBM AML HI-Small dataset (~5M transactions). Cost-weighted Precision@k optimization tuned to investigator review capacity, not academic AUC. Claude-powered case narratives where every claim cites a specific transaction or feature value from the alert evidence bundle. FastAPI service with Pydantic v2 contracts, Streamlit investigator UI, Langfuse plus Prometheus observability, PSI drift detection, segment fairness audit. 49 pytest tests. Multi-stage Docker.
+End-to-end production AML transaction monitoring service for payments platforms. Hybrid scoring stacks an Isolation Forest anomaly score as a feature into a calibrated LightGBM classifier, trained on the IBM AML HI-Small dataset (~5M transactions). Cost-weighted Precision@k optimization tuned to investigator review capacity, not academic AUC. Claude-powered case narratives where every claim cites a specific transaction or feature value from the alert evidence bundle. FastAPI service with Pydantic v2 contracts, Streamlit investigator UI, Langfuse plus Prometheus observability, PSI drift detection, segment fairness audit. 53 pytest tests. Multi-stage Docker.
 
 > The finding I didn't expect: production AML is rate-limited by investigator review capacity, not by model discrimination. A 0.92 AUC-PR model with 4x the alert volume is undeployable. The right metric is cost-weighted Precision@k at the team's daily review capacity. Standard ML literature ranks by AUC; production ranks by investigator hours.
 
@@ -22,7 +22,7 @@ End-to-end production AML transaction monitoring service for payments platforms.
 | Lift over random alerting | ~445x |
 | Test recall | 22.4% (capacity-bound by design) |
 | Selected family | LightGBM (Optuna sweep: XGBoost + LightGBM) |
-| Test suite | 49/49 passing |
+| Test suite | 53/53 passing |
 | Inference target | < 150ms p99 on scoring path |
 
 ---
