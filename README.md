@@ -81,14 +81,14 @@ Full reasoning behind each principle is in the project READMEs.
 
 ### Education
 
-- **M.S. Artificial Intelligence and Business Analytics.** University of South Florida (expected May 2027). Focus: production AI systems and applied ML.
-- **B.S. Industrial Engineering.** University of South Florida (2021)
-- **Six Sigma Green Belt.** American Society for Quality
+- **M.S. Artificial Intelligence and Business Analytics**<br>University of South Florida (expected May 2027)<br>Focus: digital transformation, using AI and machine learning to improve workflows and solve business problems
+- **B.S. Industrial Engineering**<br>University of South Florida (2021)<br>Focus: applied ML, quantitative analysis, statistics, process improvement
+- **Six Sigma Green Belt**<br>American Society for Quality
 
 ---
 
 ### Currently evaluating opportunities
 
-ML/AI Engineer, Data Scientist, and Applied AI roles.
+AI/ML Engineer, Data Scientist, and Applied AI roles.
 
 **Reach me:** [LinkedIn](https://linkedin.com/in/felipe-toro-g) · ftoro26@gmail.com
