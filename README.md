@@ -1,6 +1,6 @@
 ## Felipe Toro
 
-*M.S. in AI & Business Analytics (May 2027)*
+*M.S. in Artificial Intelligence & Business Analytics (May 2027)*
 
 The bridge between executive strategy, analytics & AI/ML implementation.
 
