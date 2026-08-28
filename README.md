@@ -4,13 +4,13 @@
 
 The bridge between executive strategy and AI/ML implementation.
 
-I'm a business intelligence engineer with eight years of experience optimizing processes and building systems to solve business problems. Executive-level finance experience in a highly regulated industry. $300M+ in proposals defended against federal and private auditors.
+I'm a Business Intelligence Engineer and Pricing Team Lead with 8+ years across analytics, pricing, and finance. Built the BI function at an aerospace and defense manufacturer, present pricing strategy and analytics to the CEO and executive team, and defended 30+ TINA-compliant cost packages through federal audits with a 100% pass rate. Secured $300M+ in revenue through proposal pipeline work.
 
-The audit-defensibility, schema-as-contract discipline, and cost-aware decision frameworks I built in that environment transfer directly to financial services AI/ML.
+The audit-defensibility, schema-as-contract discipline, and cost-aware decision frameworks I built in that environment transfer directly to fintech, SaaS analytics, and any environment where a number has to survive scrutiny.
 
 ---
 
-**[AML Compliance Platform with LLM Narratives](https://github.com/FelipeToroG/aml-transaction-monitoring)**
+**[Claude-Powered AML Transaction Monitoring & Alert Triage Platform](https://github.com/FelipeToroG/aml-transaction-monitoring)**
 
 End-to-end production AML transaction monitoring service for payments platforms. Hybrid scoring stacks an Isolation Forest anomaly score as a feature into a calibrated LightGBM classifier, trained on the IBM AML HI-Small dataset (~5M transactions). Cost-weighted Precision@k optimization tuned to investigator review capacity, not academic AUC. Claude-powered case narratives where every claim cites a specific transaction or feature value from the alert evidence bundle. FastAPI service with Pydantic v2 contracts, Streamlit investigator UI, Langfuse plus Prometheus observability, PSI drift detection, segment fairness audit. 53 pytest tests. Multi-stage Docker.
 
@@ -79,9 +79,21 @@ Full reasoning behind each principle is in the project READMEs.
 
 ---
 
+### AI-augmented practice
+
+I don't just build AI systems, I use AI as a daily development partner and lead its adoption at my company.
+
+- **Building with AI:** Ship production ML and GenAI systems with Claude API, FastAPI, Docker, and full observability. Details in the projects above.
+- **Working with AI:** Use Claude daily as a collaborative development partner for DAX authoring, Python analytics, Power Query optimization, ERD documentation, and system design. Ship faster, document better, catch more edge cases.
+- **Driving AI adoption:** Coordinating Microsoft Copilot GCC High rollout at a federal contractor with CMMC compliance constraints. Trained executives and 10+ managers on Copilot for meeting minutes and process documentation, and on Claude for proposal narratives and action-item extraction.
+
+The interesting problem isn't whether to use AI. It's how to use it responsibly in environments where every output has to survive audit.
+
+---
+
 ### Education
 
-- **M.S. Artificial Intelligence and Business Analytics**<br>University of South Florida (expected May 2027)<br>Focus: digital transformation, using AI and machine learning to improve workflows and solve business problems
+- **M.S. Artificial Intelligence and Business Analytics**<br>University of South Florida (expected May 2027)<br>Focus: AI & Machine Learning Modeling, AI Strategy & Analytics Engineering
 - **B.S. Industrial Engineering**<br>University of South Florida (2021)<br>Focus: applied ML, quantitative analysis, statistics, process improvement
 - **Six Sigma Green Belt**<br>American Society for Quality
 
@@ -89,6 +101,6 @@ Full reasoning behind each principle is in the project READMEs.
 
 ### Currently evaluating opportunities
 
-AI/ML Engineer, Data Scientist, and Applied AI roles.
+Business Intelligence, Analytics Engineering, Pricing Analytics, and Applied ML roles across fintech, SaaS, and defense.
 
-**Reach me:** [LinkedIn](https://linkedin.com/in/felipe-toro-g) · ftoro26@gmail.com
+**Reach me:** [LinkedIn](https://linkedin.com/in/felipe-toro-g) · <ftoro26@gmail.com>
