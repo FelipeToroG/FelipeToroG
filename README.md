@@ -2,7 +2,7 @@
 
 *M.S. in AI & Business Analytics (May 2027)*
 
-The bridge between executive strategy and AI/ML implementation.
+The bridge between executive strategy, analytics & AI/ML implementation.
 
 I'm a Business Intelligence Engineer and Pricing Team Lead with 8+ years across analytics, pricing, and finance. Built the BI function at an aerospace and defense manufacturer, present pricing strategy and analytics to the CEO and executive team, and defended 30+ TINA-compliant cost packages through federal audits with a 100% pass rate. Secured $300M+ in revenue through proposal pipeline work.
 
